@@ -142,7 +142,16 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
-.header, .style-guide{
+/* Services Card type 4 */
+
+.custom-card-type4{
+    text-align: center;
+    background: rgba(204, 204, 204, 0.1);
+    padding: 80px 20px;
+    transition: all ease-in-out 0.3s;
+}
+
+.header, .header-top, .style-guide{
     content: "";
     background: #040404 url(../images/rajeshbg.jpg) top right no-repeat;
     background-size: cover;
@@ -153,6 +162,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
     z-index: -1;
 }
+
+
 .style-guide{
     height: auto;
 }
@@ -166,14 +177,6 @@ h1, h2, h3, h4, h5, h6 {
     overflow-y: auto; 
 }
 
-/* .header-top {
-    height: 80px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.9);
-} */
 a{
     color: #18d26e;
     text-decoration: none;
@@ -187,7 +190,7 @@ body{
     background: transparent;
 }
 
-.header h1{
+.header h1, .header-top h1{
     font-size: 48px;
     margin: 0;
     padding: 0;
@@ -196,7 +199,22 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
-.header h1 a, .header h1 a:hover{
+.header-top{
+    height: 80px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 0;
+}
+
+.header-top h1{
+    margin-right: auto;
+    font-size: 36px;
+}
+
+.header h1 a, .header h1 a:hover, .header-top h1 a, .header-top h1 a:hover{
     color: #fff;
     line-height: 1;
     display: inline-block;
@@ -213,6 +231,11 @@ body{
     color: #fff;
     border-bottom: solid 2px #18d26e;
     padding-bottom: 5px;
+}
+
+.header-top .text-content{
+    height: auto;
+    overflow-y: unset;
 }
 
 .main-navigation ul{
@@ -332,7 +355,7 @@ transition: 0.3s;
 }
 
 .about-page{
-    padding: 30px;
+    padding: 100px 30px 45px 30px;
 }
 
 .about-section, .counts-section, .skills-section, .intrests-section, .testimonial-section{
