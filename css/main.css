@@ -6,6 +6,8 @@ h1, h2, h3, h4, h5, h6 {
 .bg-opacity{
     background-color: #000;
     opacity: 0.8;
+    margin-bottom: 30px;
+    padding: 30px 30px 30px 30px;
 }
 
 /* Section title */
@@ -151,6 +153,110 @@ h1, h2, h3, h4, h5, h6 {
     transition: all ease-in-out 0.3s;
 }
 
+.custom-card-type4:hover {
+    color: #000;
+    background-color: #18d26e;
+}
+
+.custom-card-type4:hover .icon{
+    background-color: #fff;
+}
+/* .custom-card-type4:hover .icon::before{
+    background-color: #35e888;
+} */
+
+.icon{
+    margin: 0 auto;
+    height: 64px;
+    width: 64px;
+    background-color: #18d26e;
+    font-size: 35px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.custom-card-type4 .icon::before{
+    position: absolute;
+    content: '';
+    left: 39.8%;
+    top: 88px;
+    height: 64px;
+    width: 64px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    transition: all .3s ease-out 0s;
+}
+
+.custom-card-type4 h4{
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.custom-card-type4 h4 p{
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* timeline */
+.timeline{
+    border-left: 2px solid #fff;
+    padding-left: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.timeline::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #18d26e;
+    border: 2px solid #18d26e;
+    border-radius: 50%;
+    left: -9px;
+    top: 0;
+}
+.timeline h3{
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #18d26e;
+    margin-bottom: 10px;
+}
+.timeline .label{
+    font-family: "Raleway", sans-serif;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 5px 14px;
+    font-weight: 600;
+}
+
+.timeline li{
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.timeline ul{
+    padding-left: 20px;
+}
+
+.timeline i{
+    font-size: 16px;
+}
+
+.timeline-title{
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
 .header, .header-top, .style-guide{
     content: "";
     background: #040404 url(../images/rajeshbg.jpg) top right no-repeat;
@@ -161,6 +267,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     height: 100vh;
     z-index: -1;
+    transition: ease-in-out 0.3s;
 }
 
 
@@ -206,7 +313,7 @@ body{
     right: 0;
     top: 0;
     background: rgba(0, 0, 0, 0.9);
-    z-index: 0;
+    z-index: 1;
 }
 
 .header-top h1{
@@ -354,11 +461,11 @@ transition: 0.3s;
     color: #fff;
 }
 
-.about-page{
+.about-page, .resume-page, .services-page{
     padding: 100px 30px 45px 30px;
 }
 
-.about-section, .counts-section, .skills-section, .intrests-section, .testimonial-section{
+.about-section, .counts-section, .skills-section, .intrests-section, .testimonial-section, .resume-section, .service-section{
     background: rgba(0, 0, 0, 0.9);
     padding: 30px;
 }
