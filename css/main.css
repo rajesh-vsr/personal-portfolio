@@ -105,9 +105,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Testimonial Card type 3 */
-.card-type-3{
-    /* background-color: rgba(255, 255, 255, 0.1); */
-}
+/* .card-type-3{
+    background-color: rgba(255, 255, 255, 0.1);
+} */
 .card-type-3 p{
     color: #fff;
     background-color: rgba(255, 255, 255, 0.1);
@@ -200,6 +200,59 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 24px;
     font-size: 14px;
     margin-bottom: 0;
+}
+
+/* Custom card type6 */
+
+.custom-card-type6{
+background: rgba(255, 255, 255, 0.08);
+padding: 20px;
+}
+
+.custom-card-type6 i{
+    color: #18d26e;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 52px;
+    padding: 14px;
+} 
+
+.custom-card-type6 h3{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    margin: -40px 0 8px 68px;
+}
+
+.custom-card-type6 p{
+    padding: 0;
+    color: #fff;
+    line-height: 24px;
+    font-size: 14px;
+    margin: 0 0 0 68px;
+}
+
+.custom-card-type6 .social-connect i{
+    font-size: 18px;
+    color: #fff;
+    line-height: 1;
+    margin-right: 12px;
+    transition: 0.3s;
+    background: none;
+    padding: 0;
+}
+
+.custom-card-type6 a{
+    color: #fff;
+}
+
+.custom-card-type6 a:hover{
+    color: #18d26e;
+}
+
+.custom-card-type6 .social-connect i:hover{
+    color: #18d26e;
 }
 
 /* timeline */
@@ -461,13 +514,46 @@ transition: 0.3s;
     color: #fff;
 }
 
-.about-page, .resume-page, .services-page{
+.about-page, .resume-page, .services-page, .contact-page{
     padding: 100px 30px 45px 30px;
+    transition: 0.3s;
 }
 
-.about-section, .counts-section, .skills-section, .intrests-section, .testimonial-section, .resume-section, .service-section{
+.about-section, .counts-section, .skills-section, .intrests-section, .testimonial-section, .resume-section, .service-section, .contact-section, .contact-form{
     background: rgba(0, 0, 0, 0.9);
     padding: 30px;
+}
+.work-progress{
+    background: #040404 url(../images/rajeshbg.jpg) top right no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    padding-top: 375px;
+}
+
+.email-form{
+    background: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+}
+.email-form input, .email-form textarea{
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.08);
+    border: 0;
+    transition: 0.3s;
+    color: #fff;
+}
+.email-form input:focus, .email-form textarea:focus{
+    background:rgba(255, 255, 255, 0.11);
+    box-shadow: none;
+    color: #fff;
+}
+.email-form button[type="submit"]{
+    background: #18d26e;
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
 }
 
 .about-section h3{
